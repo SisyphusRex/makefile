@@ -1,3 +1,5 @@
+# This makefile assumes all src files are one level below src/*.c and not in subdirectories src/./*c
+
 # Define source and header directories
 SRCDIR := src
 INCDIR := include
