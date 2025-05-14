@@ -1,0 +1,2 @@
+Use Shell Commands to search for files
+  SOURCES := $(shell find src -name "*.c")
