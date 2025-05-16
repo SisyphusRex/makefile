@@ -1,2 +1,36 @@
-Use Shell Commands to search for files
+Makefile is made up of rules.
+Rules include target, dependencies or prerequisites, and recipe made up of commands:
+
+<target>: <dependencies>
+    <recipe_command>
+    <recipe_command>
+    ...
+
+When you run make on a target, the recipe commands are used on the dependencies to make the target
+
+Special Symbols
+    Magic Variables
+        out.o: src.c src.h
+            $@  #target, out.o
+            $<  #first prerequisite, src.c
+            $^  #all prerequisites, src.c src.h
+        %.o: %.c
+            $*  #the stem which the implicit rule matches (foo in foo.c)
+        #others
+            $+  #all prerequisites with duplication
+            $?  #only new prerequisites
+            $|  #prerequisites (order-only)
+            $(@D)   #target directory
+
+    Command Prefixes
+        - ignore errors
+        @ dont print command
+        + run even if make is in don't execute mode
+            build:
+                @echo "compiling"
+                -gcc $< $@
+
+Use Shell Commands to search for files to any depth
   SOURCES := $(shell find src -name "*.c")
+Find files 1 level below src
+    SOURCES := $(wildcard src/*.c)
