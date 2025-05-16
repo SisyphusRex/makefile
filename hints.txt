@@ -1,3 +1,5 @@
+Makefile is a declarative language where the outcome is described and the system determines steps
+    as opposed to imperative programming: step by step instructions
 Makefile is made up of rules.
 Rules include target, dependencies or prerequisites, and recipe made up of commands:
 
