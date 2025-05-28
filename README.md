@@ -5,7 +5,7 @@ src: .c
 include: .h  
 build: .o  
 
-From command line, type make to compile
+From command line, type make to compile  
 Type make clean to clear old build
 
 ### Outside sources
