@@ -9,6 +9,7 @@ Rules include target, dependencies or prerequisites, and recipe made up of comma
     ...
 
 When you run make on a target, the recipe commands are used on the dependencies to make the target
+    If the dependencies need to be made, then make looks for a rule to make them
 
 Special Symbols
     Magic Variables
