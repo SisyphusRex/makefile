@@ -37,3 +37,7 @@ Use Shell Commands to search for files to any depth
   SOURCES := $(shell find src -name "*.c")
 Find files 1 level below src
     SOURCES := $(wildcard src/*.c)
+
+::
+    Terminating Rules (as opposed to :)
+    If prerequisites are not found, don't autogenerate, stop make immediately
