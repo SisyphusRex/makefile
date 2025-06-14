@@ -28,3 +28,5 @@ unity/include
    * makefile for unity test framework
 7. https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html
    * gcc flags
+8. https://www.reddit.com/r/C_Programming/comments/1jd6rm6/c_unity_testing_can_i_just_combine_all_source/
+   * unit testing functions that depend on another function
