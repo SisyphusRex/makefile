@@ -1,23 +1,23 @@
 Makefile modularizes compiling.
 
-Directories:  
-src: .c  
-include: .h  
-build: .o  
+Directories:
+src: .c
+include: .h
+build: .o
 
-From command line, type make to compile  
-Type make clean to clear old build  
+From command line, type make to compile
+Type make clean to clear old build
 
 
 ### Unity Makefile
 This makefile expects you to have a different directory structure and the unity src and header files.
 
-src  
-include  
-test  
-unity  
-unity/src  
-unity/include  
+src
+include
+test
+unity
+unity/src
+
 
 ### Outside sources
 1. https://makefiletutorial.com/
