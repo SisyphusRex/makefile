@@ -1,0 +1,6 @@
+If your header files are in the top level directory "include/" and subdirectories "include/modules/" then convention is to only add "include/" to compiler tags and use relative paths inside .c files.
+
+gcc -Iinclude/
+
+#include "program.h"
+#include "modules/mod1.h"
