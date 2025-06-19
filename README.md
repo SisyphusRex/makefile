@@ -30,3 +30,5 @@ unity/src
    * gcc flags
 8. https://www.reddit.com/r/C_Programming/comments/1jd6rm6/c_unity_testing_can_i_just_combine_all_source/
    * unit testing functions that depend on another function
+9. https://stackoverflow.com/questions/19738956/can-i-search-directory-and-subdirectories-for-header-files  
+   * how to add header files that are in subdirectories
